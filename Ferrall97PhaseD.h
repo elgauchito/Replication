@@ -1,7 +1,7 @@
 #import "DDP"
 #include <oxdraw.h>
 
-struct Phased : Bellman {
+struct PhaseD : OneDimensionalChoice {
 
 	// define fixed effects group of the model
 	enum{USA, Canada, Ncountry} // country
@@ -29,12 +29,17 @@ struct Phased : Bellman {
 	
 	/** what other variables we need ??? */
 
-	// static decl ??
-	
-	static 	Reachable();
-	Utility();
-	static 	Run();
+	static decl done; //  
 	
 
+	/**   */
+
+
+	static 	Reachable();
+	static 	Run();
+	PhaseD();
+	Udiff(z);
+	EUtility();
+	Utility(); // do we need this one?
 
 }
