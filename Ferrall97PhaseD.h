@@ -4,13 +4,8 @@
 struct PhaseD : OneDimensionalChoice { // Is this the right class to derive from?
 
 	// define fixed effects group of the model
-	enum{USA, Canada, Ncountry} // country
 	enum{Male, Female, Ngender} // gender
 	enum{HS, College, Neduc} // education
-
-	// Ken, I think that the race/region fixed FX go all together with the interpretation that for Canada it is region and for the U.S. it is race.
-	// Otherwise we will have have missing fixed FX for Canada and US
-
 	enum{White, Nwhite, Nrace} //race variable for US
 	enum{Natlantic, Atlantic, Nregion} // region variables for Canada
  	
