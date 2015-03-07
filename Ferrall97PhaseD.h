@@ -1,7 +1,7 @@
 #import "DDP"
 #include <oxdraw.h>
 
-struct PhaseD : OneDimensionalChoice {
+struct PhaseD : OneDimensionalChoice { // Is this the right class to derive from?
 
 	// define fixed effects group of the model
 	enum{USA, Canada, Ncountry} // country
@@ -29,7 +29,7 @@ struct PhaseD : OneDimensionalChoice {
 	
 	/** what other variables we need ??? */
 
-	static decl done; //  
+	static decl done, m; //  
 	
 
 	/**   */
@@ -40,6 +40,5 @@ struct PhaseD : OneDimensionalChoice {
 	PhaseD();
 	Udiff(z);
 	EUtility();
-	Utility(); // do we need this one?
 
 }
