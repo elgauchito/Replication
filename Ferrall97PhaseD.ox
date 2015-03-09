@@ -23,7 +23,7 @@ PhaseD::Run(){
 PhaseD::Udiff(z) {
 	// assuming m has been implemented correctly.
 	if (CV(done)) return 0; // if program finished, return 0 (do we need this here??)
- 	if (CV(m)==0) return -pars[c]-lambda1*z; // U(0)-U(1) when there is an offer z, lambda1 needs to be implemented
+ 	if (CV(m)==0) return pars[c]-lambda1*z; // U(0)-U(1) when there is an offer z, lambda1 needs to be implemented
 	return 0; // no choice when already working for m>0
 }
 
