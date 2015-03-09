@@ -33,6 +33,11 @@ PhaseD::Udiff(z) {
 PhaseD::EUtility(){
 	// implement Eutility here, following Chris's notes.
 	if (CV(done)) return 0;
-	if (CV(m)==0) retun lambda1*(ztar+pars[gamma_inv]);  // need to calculate lambda1 somewhere with the values from the parameters, probably just use an explicit expression for lambda1 here? ztar+hamma_inv=z^*+1/gamma is the expected wage that is above the reservation wage. pars[gamma_inv] needs to be implemented correctly later.
+	if (CV(m)==0) {
+		decl pstar=1-exp(-(zstar-ubar)/pars[gamma_inv]); //probability of getting zstar offer
+		
+		retun {parc[c] | lambda1*(ztar+pars[gamma_inv]), pstar~(1-pstar)};  // need to calculate lambda1 somewhere with the values from the parameters, probably just use an explicit expression for lambda1 here? ztar+hamma_inv=z^*+1/gamma is the expected wage that is above the reservation wage. pars[gamma_inv] needs to be implemented correctly later.
+}
+
 	return 0; // return 0 for m>0.
 }
