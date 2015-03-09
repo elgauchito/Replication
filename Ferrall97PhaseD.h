@@ -28,9 +28,8 @@ struct PhaseD : OneDimensionalChoice { // Is this the right class to derive from
 	
 	/** what other variables we need ??? */
 
-	static decl done, m; //  
+	static decl done, m, ubar; //  "m" is market status, "ubar" is the miminum wage
 	
-
 	/**   */
 
 
