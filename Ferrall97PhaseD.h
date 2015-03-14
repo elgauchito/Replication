@@ -3,7 +3,6 @@
 
 struct PhaseD : OneDimensionalChoice { // Is this the right class to derive from?
 
-	// define fixed effects group of the model
 	enum{Male, Female, Ngender} // gender
 	enum{HS, College, Neduc} // education
 	enum{White, Nwhite, Nrace} //race variable for US
@@ -12,21 +11,22 @@ struct PhaseD : OneDimensionalChoice { // Is this the right class to derive from
 	// define random effects group
 	enum{skill0, skill1, Nskill} // skill levels
 	// define parameters to be estimated
-	enum{beta, gamma_inv, lambda0, lambda1, c, Npars}
 
-	// parameter values from table 3 p. 123
-	static const decl pars={{.979,4.02,.50,.031,3.00}, // row 1 etc
-				{.978,4.03,.38,.038,3.18},
-			 	{.989,4.38,.78,.015,1.76},
-				{.989,4.39,.73,.018,1.80},
-				{.974,4.46,.31,.018,4.64},
-				{.974,4.47,.20,.030,4.64},
-				{.977,4.64,.51,.016,4.37},
-				{.976,4.64,.37,.027,4.37} 
-	};
+	//Defining groups in the model
+	/{skill0, skill1, College, Nwhite, Atlantic, Jobtype1, Female, Ngroup} 
 
-	
-	/** what other variables we need ??? */
+	enum{lambda1, gamma_inv, lambda0, c, Npars}
+
+	//parameter values from Table 2, p. 122
+	//parsc -> Canada, parsu -> US
+
+	static const decl parsc= < -5.302, -3.515
+
+				, -0.030, .Nan, 0.519, -5.198, .Nan ;    // lambda1
+				   -1.054, -0.650, -0.700, .Nan , .Nan , .Nan , -0.186;   //gamma_inv
+				   -0.473, -0.842, 0.808 , .Nan , -0.595, .Nan, .Nan ;    // lambda0
+				    4.705, 4.633 , -0.277, .Nan , .Nan , .Nan , -0.41 >;  // c     
+			
 
 	static decl done, m, ubar; //  "m" is market status, "ubar" is the miminum wage
 	
