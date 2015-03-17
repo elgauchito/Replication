@@ -31,9 +31,10 @@ PhaseD::Udiff(z) {
 
 	c=  <gender, educ> * pars_cf + par_cr[skill];
 
-	//Implement lambda1 	
+	//Implement lambda1 
 	
-	if (CV(m)==0) return c - lambda1*z; // U(0)-U(1) when there is an offer z, lambda1 needs to be implemented
+	
+		if (CV(m)==0) return c - lambda1*z; // U(0)-U(1) when there is an offer z, lambda1 needs to be implemented
 	return 0; // no choice when already working for m>0
 }
 
