@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="oxdoc.css">
+<link rel="stylesheet" type="text/css" media="print" href="print.css">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<title>UIPhases.ox</title>
+</head>
+<body>
+<div class="header">
+[ <img class="icon" src="icons/uplevel_s.png">&nbsp;<a href="..\default.html">Up Level</a> |
+<img class="icon" src="icons/project_s.png">&nbsp;<a href="default.html">Project home</a>
+ | <img class="icon" src="icons/index_s.png">&nbsp;<a href="index.html">Index</a>
+ | <img class="icon" src="icons/hierarchy_s.png">&nbsp;<a href="hierarchy.html">Class hierarchy</a> ]</div>
+<h1><span class="icon"><img class="icon" src="icons/file.png">&nbsp;</span><span class="text">UIPhases.ox</span></h1>
+
+Timing in Ferrall (1997).
+<P/>
+The first week of benefits occurs in Phase C1 or C2 because m' is random.
+
+<a name="global"></a>
+<h2><span class="icon"><img class="icon" src="icons/global.png">&nbsp;</span><span class="text">Global variables, enumerations</span></h2>
+
+<table class="method_table">
+<tr><td colspan="3" class="header" valign="top">Variables</td></tr><tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="UIPhases.ox.html#MaxTimes">MaxTimes</a></td>
+<td class="modifiers">static const</td>
+<td class="description">Vector of Maximum phase lengths.</td>
+</tr>
+<tr><td colspan="3" class="header" valign="top">Enumerations</td></tr><tr class="even">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="UIPhases.ox.html#NextPhases">NextPhases</a></td>
+<td class="modifiers"></td>
+<td class="description">Feasible times next period (values of t'').</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="UIPhases.ox.html#Phases">Phases</a></td>
+<td class="modifiers"></td>
+<td class="description">Phases of time in the model.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="UIPhases.ox.html#UIlimits">UIlimits</a></td>
+<td class="modifiers"></td>
+<td class="description">Weeks in the UI system.</td>
+</tr>
+</table>
+
+<a name="UIPhases"></a>
+<h2><span class="icon"><img class="icon" src="icons/class.png">&nbsp;</span><span class="text">UIPhases</span></h2>
+
+
+<table class="method_table">
+<tr><td colspan="3" class="header" valign="top">Public fields</td></tr><tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___acc">acc</a></td>
+<td class="modifiers">const</td>
+<td class="description">accept ActionVariable .</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___hold">hold</a></td>
+<td class="modifiers">const</td>
+<td class="description">array to hold PhaseC3 V() values for
+        different initial UI weeks depending
+        on weeks worked in Phase C1/C2.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___mstat">mstat</a></td>
+<td class="modifiers">const</td>
+<td class="description">work status at start of period
+        StateVariable.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___noUI">noUI</a></td>
+<td class="modifiers"></td>
+<td class="description">TRUE if no UI system available.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___phase">phase</a></td>
+<td class="modifiers">const</td>
+<td class="description">Phase of the model at current t.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___Rmaxes">Rmaxes</a></td>
+<td class="modifiers">const</td>
+<td class="description">length of phases (1 for stationary).</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___t0">t0</a></td>
+<td class="modifiers">const</td>
+<td class="description">vector of phase starts times.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___wks">wks</a></td>
+<td class="modifiers">const</td>
+<td class="description">Weeks acquired if in PhaseC1/2.</td>
+</tr>
+<tr><td colspan="3" class="header" valign="top">Public methods</td></tr><tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___setPstar">setPstar</a></td>
+<td class="modifiers"></td>
+<td class="description"></td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___Transit">Transit</a></td>
+<td class="modifiers"></td>
+<td class="description"></td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___UIPhases">UIPhases</a></td>
+<td class="modifiers"></td>
+<td class="description">The clock for Ferrall (JBES 1997).</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___Update">Update</a></td>
+<td class="modifiers">virtual</td>
+<td class="description">Sets the actual limits and transitions.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___Vupdate">Vupdate</a></td>
+<td class="modifiers"></td>
+<td class="description"></td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="UIPhases.ox.html#UIPhases___Weeks">Weeks</a></td>
+<td class="modifiers">virtual</td>
+<td class="description">Return number of weeks of UI benefits earned .</td>
+</tr>
+</table>
+
+<h2><span class="icon"><img class="icon" src="icons/global.png">&nbsp;</span><span class="text">Global </span></h2>
+
+<table class="enum_table">
+<tr><td colspan="3" class="header" valign="top">Enumerations</td></tr><tr class="even">
+<td class="declaration"><a name="NextPhases"></a>NextPhases</td>
+<td class="description">Feasible times next period (values of t'').
+</td>
+<td class="elements">SamePhase, NextPhase, LastPhase, Tprime</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><a name="Phases"></a>Phases</td>
+<td class="description">Phases of time in the model.
+PhaseA : Search in school<br>
+PhaseB : Search after leaving school without a job<br>
+PhaseC1 : First working spell after school, building up UI<br>
+PhaseC2 : Acquired maximum benefits.<br>
+PhaseC3 : Receiving UI benefits after first spell ends<br>
+PhaseD  : Search and work in a stationary environment without UI.
+</td>
+<td class="elements">PhaseA, PhaseB, PhaseC1, PhaseC2, PhaseC3, PhaseD, NPhases</td>
+</tr>
+<tr class="even">
+<td class="declaration"><a name="UIlimits"></a>UIlimits</td>
+<td class="description">Weeks in the UI system.
+MinWrkReq: weeks of work required before any UI earned.<br>
+MinInitialWeeks:  weeks of UI at MinWrkReq<br>
+MaxWrkReq: weeks of work at which maximum UI earned<br>
+MaxBenWks: maximum weeks of UI<br>
+StatPhase: 0, indicates the phase is stationary<br>
+</td>
+<td class="elements">MinWrkReq, MinInitialWeeks, MaxWrkReq, MaxBenWks, StatPhase</td>
+</tr>
+</table>
+
+<a name="MaxTimes"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">MaxTimes</span></h3>
+
+<span class="declaration">static const decl MaxTimes</span>
+<dl><dd>
+Vector of Maximum phase lengths.
+
+</dd></dl>
+<h2><span class="icon"><img class="icon" src="icons/class.png">&nbsp;</span><span class="text">UIPhases</span></h2>
+
+<a name="UIPhases___acc"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">acc</span></h3>
+
+<span class="declaration">const decl acc [public]</span>
+<dl><dd>
+accept ActionVariable .
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___hold"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">hold</span></h3>
+
+<span class="declaration">const decl hold [public]</span>
+<dl><dd>
+array to hold PhaseC3 V() values for
+        different initial UI weeks depending
+        on weeks worked in Phase C1/C2.
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___mstat"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">mstat</span></h3>
+
+<span class="declaration">const decl mstat [public]</span>
+<dl><dd>
+work status at start of period
+        StateVariable.
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___noUI"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">noUI</span></h3>
+
+<span class="declaration">decl noUI [public]</span>
+<dl><dd>
+TRUE if no UI system available.
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___phase"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">phase</span></h3>
+
+<span class="declaration">const decl phase [public]</span>
+<dl><dd>
+Phase of the model at current t.
+
+<dl><dt class="seealso">See also:</dt><dd class="seealso">NPhases</dd>
+</dl>
+</dd></dl>
+
+<hr>
+<a name="UIPhases___Rmaxes"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">Rmaxes</span></h3>
+
+<span class="declaration">const decl Rmaxes [public]</span>
+<dl><dd>
+length of phases (1 for stationary).
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___setPstar"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">setPstar</span></h3>
+
+<span class="declaration">UIPhases :: setPstar ( )</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___t0"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">t0</span></h3>
+
+<span class="declaration">const decl t0 [public]</span>
+<dl><dd>
+vector of phase starts times.
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___Transit"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Transit</span></h3>
+
+<span class="declaration">UIPhases :: Transit ( FeasA )</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___UIPhases"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">UIPhases</span></h3>
+
+<span class="declaration">UIPhases :: UIPhases ( acc , mstat )</span>
+<dl><dd>
+The clock for Ferrall (JBES 1997).
+
+<dl><dt class="parameters">Parameters:</dt><dd class="parameters"><!-- parameter table --!>
+<table class="parameter_table">
+<tr>
+<td class="declaration" valign="baseline">acc</td>
+<td class="description" valign="baseline">ActionVariable that indicates acceptance of current offer
+</td>
+</tr>
+<tr>
+<td class="declaration" valign="baseline">mstat</td>
+<td class="description" valign="baseline">StateVariable that indicates working at the start of the period.</td>
+</tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+
+<hr>
+<a name="UIPhases___Update"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Update</span></h3>
+
+<span class="declaration">virtual UIPhases :: Update ( )</span>
+<dl><dd>
+Sets the actual limits and transitions.
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___Vupdate"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Vupdate</span></h3>
+
+<span class="declaration">UIPhases :: Vupdate ( now )</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___Weeks"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Weeks</span></h3>
+
+<span class="declaration">virtual UIPhases :: Weeks ( )</span>
+<dl><dd>
+Return number of weeks of UI benefits earned .
+
+</dd></dl>
+
+<hr>
+<a name="UIPhases___wks"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">wks</span></h3>
+
+<span class="declaration">const decl wks [public]</span>
+<dl><dd>
+Weeks acquired if in PhaseC1/2.
+        Weeks left on UI if in Phase C3.
+
+</dd></dl>
+<div class="footer">
+Generated by <a href="http://oxdoc.sourceforge.net">oxdoc 1.1-beta</a> &copy Copyright 2005-2014 by Y. Zwols<br>
+Math typesetting by <a href="http://www.mathjax.org/">Mathjax</a>
+</div>
