@@ -1,0 +1,28 @@
+/**  Indicator for accepting jobs with different layoff probabiltiies.
+<LI>Let <code>m</code> = an indicator for <b>m</b>arket status.</LI>
+ <dd><pre>
+ m.N = 3
+ m = 0  searching
+       1  working at job type 1
+       2  working at job type 2.
+ </pre></dd>
+<dt> We can add <code>m</code> to the state only because the person makes no decisions on the job and only if the job type is realized <em>after</em> the decision to take the offer</dt>
+<dt>Transitions from search to employment:</dt>
+<dd><pre>
+Prob(m' = 0 | m =0) =  1-a
+Prob(m' = 1 | m =0) =  a&pi;
+Prob(m' = 2 | m =0) =  a(1-&pi;)
+</pre></dd>
+<dt>Transitions back to unemployment:</dt>
+<dd><pre>
+Prob(m' = m | m&gt;0 ) = 1-&lambda;<sup>l</sup><sub>m</sub>      job continues
+Prob(m' = 0 | m&gt;0 ) = &lambda;<sup>l</sup><sub>m</sub>   laidoff
+</pre></dd>
+
+<LI>Define <code>U(w)</code> as the expected discounted utility from accepting w accounting for layoff probabilities.</LI>
+<dd><pre>
+U(u) = &Lambda;<sub>1</sub> u  if m=0
+          0   if m &gt; 0
+</pre></dd>
+where &Lambda;<sub>1</sub> is defined in the paper. Code <code>Udiff()</code> and <code>EUtility</code> accordingly.
+**/
