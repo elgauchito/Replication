@@ -1,7 +1,15 @@
 #import "DDP"
 
+/** Codes for labour market states. @name Jstates **/
+enum{nooff,hasoff,J1,J2,NJstates}
+
+/*Job offer state and job-type states. **/
 struct HetJobStatus : Random {
-	const decl TypeProp, LayOffProb, acc;
-	HetJobStatus(L,N,acc,TypeProp,LayOffProb);
+	const decl
+	/** &lambda;<sup>o</sup>, Prob. m==hasoff. **/ 			OffProb,
+	/** Prob. of J1 and J2.**/								TypeProp,
+	/** &lambda;<sup>l</sup>, layoff probailities.**/		LayOffProb,
+	/** offer acceptance decision variable.**/				acc;
+	HetJobStatus(L,acc,OffProb,TypeProp,LayOffProb);
 	Transit(FeasA);
-}
+	}

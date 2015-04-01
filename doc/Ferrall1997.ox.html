@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="oxdoc.css">
+<link rel="stylesheet" type="text/css" media="print" href="print.css">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<title>Ferrall1997.ox</title>
+</head>
+<body>
+<div class="header">
+[ <img class="icon" src="icons/project_s.png">&nbsp;<a href="default.html">Project home</a>
+ | <img class="icon" src="icons/index_s.png">&nbsp;<a href="index.html">Index</a>
+ | <img class="icon" src="icons/hierarchy_s.png">&nbsp;<a href="hierarchy.html">Class hierarchy</a> ]</div>
+<h1><span class="icon"><img class="icon" src="icons/file.png">&nbsp;</span><span class="text">Ferrall1997.ox</span></h1>
+
+
+<a name="global"></a>
+<h2><span class="icon"><img class="icon" src="icons/global.png">&nbsp;</span><span class="text">Global variables, enumerations</span></h2>
+
+<table class="method_table">
+<tr><td colspan="3" class="header" valign="top">Variables</td></tr><tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#Lpar">Lpar</a></td>
+<td class="modifiers">static const</td>
+<td class="description"></td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#LX">LX</a></td>
+<td class="modifiers">static const</td>
+<td class="description"></td>
+</tr>
+<tr><td colspan="3" class="header" valign="top">Enumerations</td></tr><tr class="odd">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#Anonymous enum 1">Anonymous enum 1</a></td>
+<td class="modifiers"></td>
+<td class="description"></td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#Anonymous enum 2">Anonymous enum 2</a></td>
+<td class="modifiers"></td>
+<td class="description"></td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#ParamIndices">ParamIndices</a></td>
+<td class="modifiers"></td>
+<td class="description">Structural parameter indices.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#Xindices">Xindices</a></td>
+<td class="modifiers"></td>
+<td class="description">X variable indices.</td>
+</tr>
+</table>
+
+<a name="UISearch"></a>
+<h2><span class="icon"><img class="icon" src="icons/class.png">&nbsp;</span><span class="text">UISearch</span></h2>
+
+Replicate the DP reservation-wage model in Ferrall (JBES 1997).
+
+<table class="method_table">
+<tr><td colspan="3" class="header" valign="top">Public fields</td></tr><tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___cursk">cursk</a></td>
+<td class="modifiers">static</td>
+<td class="description">Dyanmic current skill type.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___curx">curx</a></td>
+<td class="modifiers">static</td>
+<td class="description">Dynamicc current value of xvars.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___epars">epars</a></td>
+<td class="modifiers">static</td>
+<td class="description">Static <a href="Ferrall1997.ox.html#ParamIndices">ParamIndices</a> array of estimated parameters.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Lambda1">Lambda1</a></td>
+<td class="modifiers">static</td>
+<td class="description">Dynamic &Lambda;<sub>1</sub> in the paper.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___m">m</a></td>
+<td class="modifiers">static</td>
+<td class="description">labour market status.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___mp">mp</a></td>
+<td class="modifiers">static</td>
+<td class="description">Dynamically set <a href="Ferrall1997.ox.html#ParamIndices">ParamIndices</a> array of model parameters.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___skill">skill</a></td>
+<td class="modifiers">static</td>
+<td class="description">Skill type RandomEffect.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___spec">spec</a></td>
+<td class="modifiers">static</td>
+<td class="description">Static  <a href="Ferrall1997.ox.html#ParamIndices">ParamIndices</a> array of specifications .</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/field_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___xvars">xvars</a></td>
+<td class="modifiers">static</td>
+<td class="description">Regressors FixedEffectBlock.</td>
+</tr>
+<tr><td colspan="3" class="header" valign="top">Public methods</td></tr><tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___C">C</a></td>
+<td class="modifiers">static</td>
+<td class="description">c specification equation (15) page 121.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Delt">Delt</a></td>
+<td class="modifiers">static</td>
+<td class="description">Discount factor &beta; (here named &delta;) equation (15) page 121.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___eparsInitialize">eparsInitialize</a></td>
+<td class="modifiers">static</td>
+<td class="description">Initialize estimated parameter values and set up dynamic model parameter values.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___EUtility">EUtility</a></td>
+<td class="modifiers"></td>
+<td class="description"></td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___FeasibleActions">FeasibleActions</a></td>
+<td class="modifiers"></td>
+<td class="description"></td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Gamm">Gamm</a></td>
+<td class="modifiers">static</td>
+<td class="description">1/&gamma; specification equation (15) page 121.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___LamL">LamL</a></td>
+<td class="modifiers">static</td>
+<td class="description">&lambda;<sup>l</sup><sub>j</sub> specification equation (15) page 121.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___LamO">LamO</a></td>
+<td class="modifiers">static</td>
+<td class="description">&lambda;<sup>o</sup> specification equation (15) page 121.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___mparsUpdate">mparsUpdate</a></td>
+<td class="modifiers">static</td>
+<td class="description"></td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___OfferF">OfferF</a></td>
+<td class="modifiers"></td>
+<td class="description">probability of getting zstar offer.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___PDVcoeff">PDVcoeff</a></td>
+<td class="modifiers">static</td>
+<td class="description">&Lambda;<sub>1</sub> definition, page 117.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Pij">Pij</a></td>
+<td class="modifiers">static</td>
+<td class="description">&pi;<sup>l</sub><sub>j</sub> specification equation (15) page 121.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Piz">Piz</a></td>
+<td class="modifiers">static</td>
+<td class="description">&pi;<sub>0</sub> (type 0 proportion) specification equation (15) page 121.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Run">Run</a></td>
+<td class="modifiers">static</td>
+<td class="description"></td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___skdens">skdens</a></td>
+<td class="modifiers">static</td>
+<td class="description"></td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Ubar">Ubar</a></td>
+<td class="modifiers">static</td>
+<td class="description">ubar specification (see page 121 text).</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Udiff">Udiff</a></td>
+<td class="modifiers"></td>
+<td class="description"></td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___UISearch">UISearch</a></td>
+<td class="modifiers"></td>
+<td class="description">Set initial guess of z*.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___uPDV">uPDV</a></td>
+<td class="modifiers"></td>
+<td class="description">EPDV of utility of jobs accepted based on z*.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/method_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Utility">Utility</a></td>
+<td class="modifiers"></td>
+<td class="description"></td>
+</tr>
+<tr><td colspan="3" class="header" valign="top">Enumerations</td></tr><tr class="odd">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Country">Country</a></td>
+<td class="modifiers"></td>
+<td class="description">country codes.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Educ">Educ</a></td>
+<td class="modifiers"></td>
+<td class="description">educ.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Gender">Gender</a></td>
+<td class="modifiers"></td>
+<td class="description">gender codes.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Race">Race</a></td>
+<td class="modifiers"></td>
+<td class="description">U..S.race codes.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Region">Region</a></td>
+<td class="modifiers"></td>
+<td class="description">Cdn regio codes.</td>
+</tr>
+<tr class="even">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___Skills">Skills</a></td>
+<td class="modifiers"></td>
+<td class="description">skill codes.</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><img class="icon" src="icons/enum_s.png">&nbsp;<a href="Ferrall1997.ox.html#UISearch___WkInSch">WkInSch</a></td>
+<td class="modifiers"></td>
+<td class="description">work in school codes.</td>
+</tr>
+</table>
+
+<h2><span class="icon"><img class="icon" src="icons/global.png">&nbsp;</span><span class="text">Global </span></h2>
+
+<table class="enum_table">
+<tr><td colspan="3" class="header" valign="top">Enumerations</td></tr><tr class="even">
+<td class="declaration"><a name="Anonymous enum 1"></a>Anonymous enum 1</td>
+<td class="description"></td>
+<td class="elements">rx, fx, CoeffTypes</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><a name="Anonymous enum 2"></a>Anonymous enum 2</td>
+<td class="description"></td>
+<td class="elements">Njobtypes</td>
+</tr>
+<tr class="even">
+<td class="declaration"><a name="ParamIndices"></a>ParamIndices</td>
+<td class="description">Structural parameter indices.
+</td>
+<td class="elements">ubar, lamL, delt, gamm, c, piz, pij, lamO, sig, Nparams</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><a name="Xindices"></a>Xindices</td>
+<td class="description">X variable indices.
+</td>
+<td class="elements">gender, educ, raceregion, wkinsch, ctry, NX</td>
+</tr>
+</table>
+
+<a name="Lpar"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">Lpar</span></h3>
+
+<span class="declaration">static const decl Lpar</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="LX"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">LX</span></h3>
+
+<span class="declaration">static const decl LX</span>
+<dl><dd>
+
+</dd></dl>
+<h2><span class="icon"><img class="icon" src="icons/class.png">&nbsp;</span><span class="text">UISearch</span></h2>
+
+<table class="enum_table">
+<tr><td colspan="3" class="header" valign="top">Enumerations</td></tr><tr class="even">
+<td class="declaration"><a name="UISearch___Country"></a>Country</td>
+<td class="description">country codes.
+</td>
+<td class="elements">Canada, Nctry</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><a name="UISearch___Educ"></a>Educ</td>
+<td class="description">educ.  codes.
+</td>
+<td class="elements">HS, College, Neduc</td>
+</tr>
+<tr class="even">
+<td class="declaration"><a name="UISearch___Gender"></a>Gender</td>
+<td class="description">gender codes.
+</td>
+<td class="elements">Male, Female, Ngender</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><a name="UISearch___Race"></a>Race</td>
+<td class="description">U..S.race codes.
+</td>
+<td class="elements">White, Nwhite, Nrace</td>
+</tr>
+<tr class="even">
+<td class="declaration"><a name="UISearch___Region"></a>Region</td>
+<td class="description">Cdn regio codes.
+</td>
+<td class="elements">Natlantic, Atlantic, Nregion</td>
+</tr>
+<tr class="odd">
+<td class="declaration"><a name="UISearch___Skills"></a>Skills</td>
+<td class="description">skill codes.
+</td>
+<td class="elements">skill0, skill1, Nskill</td>
+</tr>
+<tr class="even">
+<td class="declaration"><a name="UISearch___WkInSch"></a>WkInSch</td>
+<td class="description">work in school codes.
+</td>
+<td class="elements">No, Yes, NSch</td>
+</tr>
+</table>
+
+<a name="UISearch___C"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">C</span></h3>
+
+<span class="declaration">static UISearch :: C ( )</span>
+<dl><dd>
+c specification equation (15) page 121.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___cursk"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">cursk</span></h3>
+
+<span class="declaration">static decl cursk [public]</span>
+<dl><dd>
+Dyanmic current skill type.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___curx"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">curx</span></h3>
+
+<span class="declaration">static decl curx [public]</span>
+<dl><dd>
+Dynamicc current value of xvars.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___Delt"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Delt</span></h3>
+
+<span class="declaration">static UISearch :: Delt ( )</span>
+<dl><dd>
+Discount factor &beta; (here named &delta;) equation (15) page 121.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___epars"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">epars</span></h3>
+
+<span class="declaration">static decl epars [public]</span>
+<dl><dd>
+Static <a href="Ferrall1997.ox.html#ParamIndices">ParamIndices</a> array of estimated parameters.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___eparsInitialize"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">eparsInitialize</span></h3>
+
+<span class="declaration">static UISearch :: eparsInitialize ( )</span>
+<dl><dd>
+Initialize estimated parameter values and set up dynamic model parameter values.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___EUtility"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">EUtility</span></h3>
+
+<span class="declaration">UISearch :: EUtility ( )</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___FeasibleActions"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">FeasibleActions</span></h3>
+
+<span class="declaration">UISearch :: FeasibleActions ( A )</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___Gamm"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Gamm</span></h3>
+
+<span class="declaration">static UISearch :: Gamm ( )</span>
+<dl><dd>
+1/&gamma; specification equation (15) page 121.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___Lambda1"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">Lambda1</span></h3>
+
+<span class="declaration">static decl Lambda1 [public]</span>
+<dl><dd>
+Dynamic &Lambda;<sub>1</sub> in the paper.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___LamL"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">LamL</span></h3>
+
+<span class="declaration">static UISearch :: LamL ( )</span>
+<dl><dd>
+&lambda;<sup>l</sup><sub>j</sub> specification equation (15) page 121.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___LamO"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">LamO</span></h3>
+
+<span class="declaration">static UISearch :: LamO ( )</span>
+<dl><dd>
+&lambda;<sup>o</sup> specification equation (15) page 121.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___m"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">m</span></h3>
+
+<span class="declaration">static decl m [public]</span>
+<dl><dd>
+labour market status.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___mp"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">mp</span></h3>
+
+<span class="declaration">static decl mp [public]</span>
+<dl><dd>
+Dynamically set <a href="Ferrall1997.ox.html#ParamIndices">ParamIndices</a> array of model parameters.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___mparsUpdate"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">mparsUpdate</span></h3>
+
+<span class="declaration">static UISearch :: mparsUpdate ( )</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___OfferF"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">OfferF</span></h3>
+
+<span class="declaration">UISearch :: OfferF ( )</span>
+<dl><dd>
+probability of getting zstar offer.
+1-exp{ &gamma;max(z*-ubar,0.0) }
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___PDVcoeff"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">PDVcoeff</span></h3>
+
+<span class="declaration">static UISearch :: PDVcoeff ( )</span>
+<dl><dd>
+&Lambda;<sub>1</sub> definition, page 117.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___Pij"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Pij</span></h3>
+
+<span class="declaration">static UISearch :: Pij ( )</span>
+<dl><dd>
+&pi;<sup>l</sub><sub>j</sub> specification equation (15) page 121.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___Piz"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Piz</span></h3>
+
+<span class="declaration">static UISearch :: Piz ( )</span>
+<dl><dd>
+&pi;<sub>0</sub> (type 0 proportion) specification equation (15) page 121.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___Run"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Run</span></h3>
+
+<span class="declaration">static UISearch :: Run ( )</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___skdens"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">skdens</span></h3>
+
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___skill"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">skill</span></h3>
+
+<span class="declaration">static decl skill [public]</span>
+<dl><dd>
+Skill type RandomEffect.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___spec"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">spec</span></h3>
+
+<span class="declaration">static decl spec [public]</span>
+<dl><dd>
+Static  <a href="Ferrall1997.ox.html#ParamIndices">ParamIndices</a> array of specifications .
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___Ubar"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Ubar</span></h3>
+
+<span class="declaration">static UISearch :: Ubar ( )</span>
+<dl><dd>
+ubar specification (see page 121 text).
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___Udiff"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Udiff</span></h3>
+
+<span class="declaration">UISearch :: Udiff ( z )</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___UISearch"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">UISearch</span></h3>
+
+<span class="declaration">UISearch :: UISearch ( )</span>
+<dl><dd>
+Set initial guess of z*.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___uPDV"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">uPDV</span></h3>
+
+<span class="declaration">UISearch :: uPDV ( )</span>
+<dl><dd>
+EPDV of utility of jobs accepted based on z*.
+<LI>Define <code>U(u)</code> as the expected discounted utility from accepting u=lnw, accounting for layoff probabilities.</LI>
+<dd><pre>
+U(u) = &Lambda;<sub>1</sub> u  if m=0
+          0   if m &gt; 0
+</pre></dd>
+where &Lambda;<sub>1</sub> is defined in the paper.
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___Utility"></a>
+<h3><span class="icon"><img class="icon" src="icons/method.png">&nbsp;</span><span class="text">Utility</span></h3>
+
+<span class="declaration">UISearch :: Utility ( )</span>
+<dl><dd>
+
+</dd></dl>
+
+<hr>
+<a name="UISearch___xvars"></a>
+<h3><span class="icon"><img class="icon" src="icons/field.png">&nbsp;</span><span class="text">xvars</span></h3>
+
+<span class="declaration">static decl xvars [public]</span>
+<dl><dd>
+Regressors FixedEffectBlock.
+
+</dd></dl>
+<div class="footer">
+Generated by <a href="http://oxdoc.sourceforge.net">oxdoc 1.1-beta</a> &copy Copyright 2005-2014 by Y. Zwols<br>
+Math typesetting by <a href="http://www.mathjax.org/">Mathjax</a>
+</div>
